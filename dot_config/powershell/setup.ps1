@@ -203,8 +203,6 @@ if ($IsWindows) {
         $appList = $appList -replace "[\s].+",""
         $apps = (
             "chezmoi",
-            "Delugia-Nerd-Font",
-            "Delugia-Nerd-Font-Complete",
             "FiraCode-NF-Mono",
             "FiraCode",
             "Inconsolata-NF-Mono",
@@ -216,6 +214,7 @@ if ($IsWindows) {
             "micro",
             "nano",
             "neofetch",
+            "nodejs",
             "ntop",
             "ripgrep",
             "sqlite",
