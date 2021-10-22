@@ -2130,7 +2130,7 @@ function Set-LocationCode {
     param()
 
     begin {
-        $path = Convert-Path -Path "${HOME}\Code"
+        $path = Convert-Path -Path "${HOME}\Desktop\Code"
         Write-Verbose "Destination set to $path"
     }
 
