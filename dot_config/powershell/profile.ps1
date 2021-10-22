@@ -31,8 +31,7 @@ $modules | ForEach-Object {
     }
 }
 if (Get-Module -ListAvailable -Name "oh-my-posh") {
-    Set-Theme fetzu
-    $ThemeSettings.Colors.PromptBackgroundColor = "Blue"
+    Set-PoshPrompt -Theme  ~/fetzu.omp.json
     $DefaultUser = $Env:username
 }
 if (Get-Module -ListAvailable -Name "Terminal-Icons") {
@@ -40,38 +39,38 @@ if (Get-Module -ListAvailable -Name "Terminal-Icons") {
 }
 
 # Import popular commands from Linux.
-if (Get-Command Import-WslCommand -errorAction Ignore) {
-    $WslCommands = @(
-        "chmod",
-        "grep",
-        "head",
-        "less",
-        "ls",
-        "man",
-        "ssh",
-        "tail",
-        "touch"
-    )
-    $WslImportedCommands = @()
-    $WslDefaultParameterValues = @{
-        grep = "-E";
-        less = "-i";
-        ls = "-AFhl --color=auto"
-    }
-
-    $WslCommands | ForEach-Object {
-        if (!Get-Command $_ -errorAction Ignore) {
-            wsl command -v $_ > null
-            if ($?) {
-                $WslImportedCommands += $_
-                Import-WslCommand "$_"
-            }
-            else {
-                $Global:Error.RemoveAt($Global:Error.Count - 1)
-            }
-        }
-    }
-}
+#if (Get-Command Import-WslCommand -errorAction Ignore) {
+#    $WslCommands = @(
+#        "chmod",
+#        "grep",
+#        "head",
+#        "less",
+#        "ls",
+#        "man",
+#        "ssh",
+#        "tail",
+#        "touch"
+#    )
+#    $WslImportedCommands = @()
+#    $WslDefaultParameterValues = @{
+#        grep = "-E";
+#        less = "-i";
+#        ls = "-AFhl --color=auto"
+#    }
+#
+#    $WslCommands | ForEach-Object {
+#        if (!Get-Command $_ -errorAction Ignore) {
+#            wsl command -v $_ > null
+#            if ($?) {
+#                $WslImportedCommands += $_
+#                Import-WslCommand "$_"
+#            }
+#            else {
+#                $Global:Error.RemoveAt($Global:Error.Count - 1)
+#            }
+#        }
+#    }
+#}
 
 
 # Includes
