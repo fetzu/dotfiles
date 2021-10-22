@@ -205,6 +205,12 @@ if ($IsWindows) {
             "chezmoi",
             "Delugia-Nerd-Font",
             "Delugia-Nerd-Font-Complete",
+            "FiraCode-NF-Mono",
+            "FiraCode",
+            "Inconsolata-NF-Mono",
+            "RobotoMono-NF",
+            "CascadiaCode-NF-Mono",
+            "CascadiaCode-NF",
             "git",
             "less",
             "micro",
@@ -214,7 +220,6 @@ if ($IsWindows) {
             "ripgrep",
             "sqlite",
             "starship",
-            "sudo",
             "vim",
             "wget",
             "winfetch"
@@ -246,6 +251,13 @@ if ($IsWindows) {
         Set-ItemProperty $property -Name $name -Value 1
         $count++
     }
+}
+
+# Install gsudo for Windows.
+# See https://github.com/gerardog/gsudo
+
+if ($IsWindows) {
+    PowerShell -Command "Set-ExecutionPolicy RemoteSigned -scope Process; iwr -useb https://raw.githubusercontent.com/gerardog/gsudo/master/installgsudo.ps1 | iex"
 }
 
 # Display termination message.
