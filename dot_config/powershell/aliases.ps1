@@ -197,9 +197,6 @@ Set-Alias -Name "safari" -Value Start-Safari -Description "Opens in Safari."
 
 Set-Alias -Name "ss" -Value Enter-Starship -Description "Enters the Starship cross-shell prompt."
 
-Set-Alias -Name "subl" -Value Start-SublimeText -Description "Opens in Sublime Text."
-Set-Alias -Name "st" -Value Start-SublimeText -Description "Opens in Sublime Text."
-
 
 # Development
 # -----------------------------------------------------------------------------

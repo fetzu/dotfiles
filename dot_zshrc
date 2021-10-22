@@ -103,7 +103,6 @@ plugins=(
     history                 # Aliases for `history` command
     pj                      # Project Jump folder shortcuts
     rsync                   # Aliases for `rsync` command
-    sublime                 # Aliases for [Sublime Text](https://www.sublimetext.com/)
     systemadmin             # Utilities for SysAdmins.
     z                       # Tracks your most used directories.
     zsh-autosuggestions     # Command suggestions based on history and completions (https://github.com/zsh-users/zsh-autosuggestions)

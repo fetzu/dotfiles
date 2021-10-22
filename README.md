@@ -164,7 +164,6 @@ System-specific aliases are marked with <b title="macOS"></b>, <b title="Wind
 | ✅   | ✅         | ✅  | `opera` | Opens file/URL in [Opera](https://www.opera.com/). |
 | ✅   | ✅         | ✅  | `safari` | Opens file/URL in [Safari](https://www.apple.com/ca/safari/). <b title="macOS"></b> |
 | ✅   | ✅         | ✅  | `ss`    | Enters the [Starship 🚀](https://starship.rs) cross-shell prompt. |
-| ✅   | ✅         | ✅  | `subl`<br>`st`  | Opens in [Sublime Text](https://www.sublimetext.com/). |
 
 <p align="right"><a href="#top" title="Back to top">🔝</a></p>
 

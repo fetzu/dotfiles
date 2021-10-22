@@ -89,7 +89,6 @@ if (Get-Command Add-EnvPath -errorAction Ignore) {
     if ($IsWindows) {
         Add-EnvPath -Path "${Env:Programfiles}\Docker\Docker\resources\bin\" -Position "Append"
         Add-EnvPath -Path "${Env:Programfiles}\Git\cmd\" -Position "Append"
-        Add-EnvPath -Path "${Env:Programfiles}\Sublime Text 3" -Position "Append"
     }
     else {
         Add-EnvPath -Path "/usr/local/sbin" -Position "Prepend"

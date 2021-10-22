@@ -1612,26 +1612,6 @@ function Enter-Starship {
     Invoke-Expression (&starship init powershell)
 }
 
-function Start-SublimeText {
-    <#
-    .SYNOPSIS
-        Opens in Sublime Text.
-    .DESCRIPTION
-        Calls the `sublime` command, and locates it on Windows if it isn't in the Path.
-    .INPUTS
-        None
-    .OUTPUTS
-        None
-    .LINK
-        https://www.sublimetext.com/
-    #>
-    $process = "sublime"
-    if ($IsWindows) {
-        $process = "subl"
-    }
-    Invoke-Expression "& '$process' $args"
-}
-
 
 # Development
 # -----------------------------------------------------------------------------

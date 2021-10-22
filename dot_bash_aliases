@@ -340,19 +340,6 @@ else
     alias ss='eval "$(starship init bash)"'
 fi
 
-# Opens (in) Sublime Text.
-# TODO: Add to path instead.
-if [[ "$OSTYPE" =~ ^darwin ]]; then
-    alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-    alias st='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-elif [[ "$OSTYPE" =~ ^(cygwin|mingw|msys) ]]; then
-    alias subl='/c/Program\ Files/Sublime\ Text\ 3/subl'
-    alias st='/c/Program\ Files/Sublime\ Text\ 3/subl'
-else
-    alias subl='sublime_text'
-    alias st='sublime_text'
-fi
-
 
 # Development
 # -----------------------------------------------------------------------------
