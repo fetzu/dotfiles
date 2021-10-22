@@ -1,0 +1,25 @@
+# -*-mode:gitignore-*- vim:ft=gitignore
+
+# ~/.gitignore_global
+# =============================================================================
+# Used by Git to determine the files and directories to ignore globally.
+#
+# This list defines global exclusions to all local repositories.
+# See https://git-scm.com/docs/gitignore
+
+# fetzu's default ignores
+# General Stuff
+*~
+.DS_Store
+.git/
+Thumbs.db
+
+#Python Stuff
+__pycache__/
+*.pyc
+venv/
+build/
+dist/
+
+#VSCode Stuff
+.vscode/

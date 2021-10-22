@@ -1,0 +1,11 @@
+// -*-mode:javascript-*- vim:ft=json
+
+// ~/.micro/bindings.json
+// ============================================================================
+// Micro text editor key bindings file.
+
+{
+    "Alt-/": "lua:comment.comment",
+    "F5": "lua:wc.wordCount",
+    "F6": "command-edit:gorename "
+}
