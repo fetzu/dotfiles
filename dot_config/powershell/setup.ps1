@@ -190,7 +190,7 @@ if ($IsWindows) {
         $buckets = (
             "extras",
             "nerd-fonts",
-            "twpayne"
+            "twpayne https://github.com/twpayne/scoop-bucket.git"
         )
         $buckets | ForEach-Object {
             if (!$bucketList.Contains($_)) {
@@ -203,6 +203,8 @@ if ($IsWindows) {
         $appList = $appList -replace "[\s].+",""
         $apps = (
             "chezmoi",
+            "innounp",
+            "dark",
             "FiraCode-NF-Mono",
             "FiraCode",
             "Inconsolata-NF-Mono",
@@ -220,8 +222,10 @@ if ($IsWindows) {
             "sqlite",
             "starship",
             "vim",
+            "vscode",
             "wget",
-            "winfetch"
+            "winfetch",
+            "windows-terminal"
         )
         $apps | ForEach-Object {
             if (!$appList.Contains($_)) {
