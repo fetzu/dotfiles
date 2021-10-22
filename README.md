@@ -1,13 +1,7 @@
 <h1 align="center">
-    <a name="top" title="dotfiles">~/.&nbsp;📂</a><br/>Cross-platform, cross-shell dotfiles<br/> <sup><sub>powered by  <a href="https://www.chezmoi.io/">chezmoi</a> 🏠</sub></sup></br>
+    <a name="top" title="dotfiles">~/.&nbsp;📂</a><br/>Cross-platform, cross-shell dotfiles<br/> <sup><sub>powered by  <a href="https://www.chezmoi.io/">chezmoi</a> 🏠</sub></sup></br></br>
     Forked from <a href="https://github.com/renemarc/dotfiles">renemarc's dotfiles</a>
 </h1>
-
-[![Codacy rating][badge-codacy]][link-codacy]
-[![CodeFactor rating][badge-codefactor]][link-codefactor]
-[![License][badge-license]][link-license]
-[![Repo analytics][badge-analytics]][link-analytics]
-[![Tweet][badge-twitter]][link-twitter]
 
 Universal command set and colourful shell configurations for Bash, Zsh and Powershell, compatible with macOS, Windows and (partially) Linux, all managed easily using [chezmoi](https://github.com/twpayne/chezmoi).
 
