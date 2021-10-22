@@ -36,7 +36,7 @@ if (Get-Module -ListAvailable -Name "oh-my-posh") {
     $DefaultUser = $Env:username
 }
 if (Get-Module -ListAvailable -Name "Terminal-Icons") {
-    Set-TerminalIconsColorTheme -Name "DevBlackOps"
+    Set-TerminalIconsTheme
 }
 
 # Import popular commands from Linux.
@@ -60,7 +60,7 @@ if (Get-Command Import-WslCommand -errorAction Ignore) {
     }
 
     $WslCommands | ForEach-Object {
-        if (! Get-Command $_ -errorAction Ignore) {
+        if (!Get-Command $_ -errorAction Ignore) {
             wsl command -v $_ > null
             if ($?) {
                 $WslImportedCommands += $_
