@@ -100,7 +100,8 @@
           "properties": {
             "battery_icon": "\f583",
             "color_background": true,
-            "charged_color": "#0476d0",
+            "charged_color": "#29315A",
+            "display_charged": false,
             "charging_color": "#33DD2D",
             "discharging_color": "#FFCD58",
             "prefix": "<transparent>\uE0BC </>",
