@@ -5,6 +5,27 @@
 
 Universal command set and colourful shell configurations for Bash, Zsh and Powershell, compatible with macOS, Windows and (partially) Linux, all managed easily using [chezmoi](https://github.com/twpayne/chezmoi).
 
+## How to deploy
+
+### ⊞ Windows
+
+0. Set the necessary permissions for PowerShell
+```
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+```
+
+1. Install chezmoi to X:\bin\
+```
+(iwr -UseBasicParsing https://git.io/chezmoi.ps1).Content | powershell -c -
+```
+
+2. Copy the dotfiles and apply them
+```
+cd X:\bin\
+.\chezmoi.exe init --apply fetzu
+```
+
+
 ## Supported toolset 🛠️
 
 Use either one or many of these, the config files will be in place and ready to provide a familiar interface.
