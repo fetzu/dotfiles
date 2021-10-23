@@ -25,14 +25,14 @@ brew "fswatch"                              # File change monitor
 brew "geoip"                                # Geographic IP lookup
 brew "gnupg"                                # GNU privacy guard
 brew "htop"                                 # Interactive system-monitor
-#brew "graphicsmagick"                      # GraphicsMagick image processor
-#brew "imagemagick"                         # ImageMagick image processor
+brew "graphicsmagick"                      # GraphicsMagick image processor
+brew "imagemagick"                         # ImageMagick image processor
 brew "jpegoptim"                            # JPEG compressor/optimizer
 brew "less"                                 # Terminal pager
 brew "lesspipe"                             # Input filter for `less`
 brew "micro"                                # Micro text editor
 brew "npm"                                  # Node package manager
-#brew "optipng"                             # PNG compressor/optimizer
+brew "optipng"                             # PNG compressor/optimizer
 brew "tidy-html5"                           # HTML corrector
 brew "neofetch"                             # System information tool
 brew "pipenv"                               # Python packaging tool
@@ -48,6 +48,7 @@ brew "unison"                               # Unison file synchronizer
 brew "wget"                                 # Web content downloader
 brew "zlib"                                 # Lossless data-compression library
 brew "twpayne/taps/chezmoi"                 # Chezmoi dotfiles manager
+brew "hugo"                                 # Static website generator 
 
 cask "font-firacode-nerd-font"              # Fira Code Nerd Font
 cask "font-hack-nerd-font-mono"             # Hack Mono Nerd Font

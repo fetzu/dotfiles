@@ -257,6 +257,8 @@ Set-Alias -Name "powershellconf" -Value Set-LocationPowershellConf -Description 
 
 Set-Alias -Name "dev" -Value Set-LocationCode -Description "Navigates to DEV directory."
 
+Set-Alias -Name "hugodir" -Value Set-LocationHugo -Description "Navigates to Hugo sites directory."
+
 
 # Varia
 # -----------------------------------------------------------------------------

@@ -1422,8 +1422,7 @@ function Update-Packages {
         Keeps all apps and packages up to date.
     .DESCRIPTION
         Looks for updates for system modules and help, then proceeds to
-        updating any packages by these optional managers: Chocolatey, Choco, 
-        Scoop, npm.
+        updating any packages by these optional managers: choco, scoop, npm, RubyGems.
     .INPUTS
         None
     .OUTPUTS
@@ -1445,7 +1444,7 @@ function Update-Packages {
     )]
     param()
 
-    Write-Host "Looks for updates for system modules and help, then proceeds to updating any packages by these optional managers: Chocolatey, Choco, npm, RubyGems."
+    Write-Host "Looks for updates for system modules and help, then proceeds to updating any packages by these optional managers: Chocolatey, scoop, npm, RubyGems."
 
     if ($PSCmdlet.ShouldProcess("System modules", "Update")) {
         Write-Host "Updating system modules..." -ForegroundColor $ColorInfo
@@ -2062,10 +2061,10 @@ function Set-LocationSublimeConf {
 # Custom paths
 # -----------------------------------------------------------------------------
 
-function Set-LocationArchives {
+function Set-LocationHugo {
     <#
     .SYNOPSIS
-        Navigates to Archives directory.
+        Navigates to Hugo's Sites directory.
     .INPUTS
         None
     .OUTPUTS
@@ -2080,7 +2079,7 @@ function Set-LocationArchives {
     param()
 
     begin {
-        $path = Convert-Path -Path "${HOME}\Archives"
+        $path = Convert-Path -Path "C:\Hugo\sites\"
         Write-Verbose "Destination set to $path"
     }
 
