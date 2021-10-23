@@ -35,6 +35,7 @@ brew "npm"                                  # Node package manager
 brew "optipng"                             # PNG compressor/optimizer
 brew "tidy-html5"                           # HTML corrector
 brew "neofetch"                             # System information tool
+brew "python@3.x"                           # Python 3.x
 brew "pipenv"                               # Python packaging tool
 brew "pyenv"                                # Python version manager
 brew "pyenv-virtualenv"                     # virtualenv and conda manager
