@@ -178,7 +178,7 @@ $modules = @{
 # See https://github.com/lukesampson/scoop
 if ($IsWindows) {
     if (!(Get-Command "scoop" -ErrorAction "Ignore")) {
-        Invoke-Expression (New-Object System.Net.WebClient).DoanloadString('https://get.scoop.sh')
+        Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
     }
     if (Get-Command "scoop" -ErrorAction "Ignore") {
         Write-Host "Verifying the state of Scoop..." -ForegroundColor $ColorInfo
