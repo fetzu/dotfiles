@@ -9,7 +9,7 @@ Universal command set and colourful shell configurations for Bash, Zsh and Power
 
 ### ⊞ Windows
 
-0. Set the necessary permissions for PowerShell
+0. Set the necessary permissions for PowerShell (**NOTE: Do this in PowerShell as an Admin!**)
 ```
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 ```
@@ -25,6 +25,7 @@ cd X:\bin\
 .\chezmoi.exe init --apply fetzu
 ```
 
+<p align="right"><a href="#top" title="Back to top">🔝</a></p>
 
 ## Supported toolset 🛠️
 
