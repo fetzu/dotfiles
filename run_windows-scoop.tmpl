@@ -1,0 +1,71 @@
+{{ if eq .chezmoi.os "windows" -}}
+
+###############################################################################
+### Setup Scoop and some other useful things                                  #
+###############################################################################
+# See https://github.com/lukesampson/scoop
+# TODO: Make sure that the order is correct here (i.e., not having git does not allow adding extra repos); run twice? (and also make sure that "scoop" is properly registered as a command.
+if (!(Get-Command "scoop" -ErrorAction "Ignore")) {
+        Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+    }
+
+if (Get-Command "scoop" -ErrorAction "Ignore") {
+    Write-Host "Verifying the state of Scoop..." -ForegroundColor $ColorInfo
+    Get-Command -Name scoop -ErrorAction Stop
+    Invoke-Command -ScriptBlock { scoop checkup }
+
+    # Install any missing bucket.
+    $bucketList = Invoke-Command -ScriptBlock { scoop bucket list }
+    $buckets = (
+        "extras",
+        "nerd-fonts",
+        "twpayne https://github.com/twpayne/scoop-bucket.git"
+    )
+    $buckets | ForEach-Object {
+        if (!$bucketList.Contains($_)) {
+            Invoke-Command -ScriptBlock { scoop bucket add $_ }
+        }
+    }
+
+    # Install any missing app.
+    $appList = Invoke-Command -ScriptBlock { scoop export }
+    $appList = $appList -replace "[\s].+",""
+    $apps = (
+        "chezmoi",
+        "innounp",
+        "dark",
+        "FiraCode-NF-Mono",
+        "FiraCode",
+        "Inconsolata-NF-Mono",
+        "RobotoMono-NF",
+        "CascadiaCode-NF-Mono",
+        "CascadiaCode-NF",
+        "git",
+        "gsudo",
+        "less",
+        "micro",
+        "nano",
+        "neofetch",
+        "nodejs",
+        "ntop",
+        "ripgrep",
+        "sqlite",
+        "starship",
+        "vim",
+        "vscode",
+        "wget",
+        "winfetch",
+        "windows-terminal"
+    )
+    $apps | ForEach-Object {
+        if (!$appList.Contains($_)) {
+            Invoke-Command -ScriptBlock { scoop install $_ }
+            $count++
+        }
+    }
+}
+
+# Display termination message.
+echo "Scoop installed/updated."
+
+{{ end -}}
