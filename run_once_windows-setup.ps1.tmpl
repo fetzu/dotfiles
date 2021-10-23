@@ -1,13 +1,13 @@
 {{ if eq .chezmoi.os "windows" -}}
 
-# Self-elevate the script if required, taken from https://www.chezmoi.io/docs/how-to/#run-a-powershell-script-as-admin-on-windows
-if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] 'Administrator')) {
-  if ([int](Get-CimInstance -Class Win32_OperatingSystem | Select-Object -ExpandProperty BuildNumber) -ge 6000) {
-    $CommandLine = "-NoExit -File `"" + $MyInvocation.MyCommand.Path + "`" " + $MyInvocation.UnboundArguments
-    Start-Process -FilePath PowerShell.exe -Verb Runas -ArgumentList $CommandLine
-    Exit
-  }
-}
+## Self-elevate the script if required, taken from https://www.chezmoi.io/docs/how-to/#run-a-powershell-script-as-admin-on-windows
+#if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] 'Administrator')) {
+#  if ([int](Get-CimInstance -Class Win32_OperatingSystem | Select-Object -ExpandProperty BuildNumber) -ge 6000) {
+#    $CommandLine = "-NoExit -File `"" + $MyInvocation.MyCommand.Path + "`" " + $MyInvocation.UnboundArguments
+#    Start-Process -FilePath PowerShell.exe -Verb Runas -ArgumentList $CommandLine
+#    Exit
+#  }
+#}
 
 ## Part One: Taken from https://raw.githubusercontent.com/jayharris/dotfiles-windows/master/windows.ps1
 ###############################################################################
@@ -679,10 +679,10 @@ $hereString = "
 $hereString += "
         - Enable LongPaths support for file paths above 260 characters"
 $hereString += [Environment]::NewLine
-Write-Host $hereString -ForegroundColor $ColorInfo
+Write-Host $hereString -ForegroundColor DarkYellow
 $confirmation = Read-Host -Prompt "Do you want to proceed? [y/N]"
 if ($confirmation -notMatch '^y(es)?$') {
-    eos
+    echo "Cancelled by the user."
     exit
 }
 Remove-Variable -Name ("confirmation", "hereString")
@@ -695,10 +695,10 @@ Remove-Variable -Name ("confirmation", "hereString")
 # Install NuGet package manager required to install WSL Interop and others.
 # See https://www.nuget.org/
 if (Get-PackageProvider -ListAvailable -Name NuGet -ErrorAction "Ignore") {
-    Write-Host "NuGet already installed, skipping." -ForegroundColor $ColorInfo
+    Write-Host "NuGet already installed, skipping." -ForegroundColor DarkYellow
 }
 else {
-    Write-Host "Installing NuGet..." -ForegroundColor $ColorInfo
+    Write-Host "Installing NuGet..." -ForegroundColor DarkYellow
     Install-PackageProvider -Name NuGet -Force
     $count++
 }
@@ -784,11 +784,11 @@ $modules = @{
     }
 
     if (Get-Module -ListAvailable -Name $_.Name -ErrorAction "Ignore") {
-        Write-Host "Checking for $($_.Name) updates ($($_.Value.Info))..." -ForegroundColor $ColorInfo
+        Write-Host "Checking for $($_.Name) updates ($($_.Value.Info))..." -ForegroundColor DarkYellow
         Update-Module $_.Name
     }
     else {
-        Write-Host "Installing $($_.Name) ($($_.Value.Info))..." -ForegroundColor $ColorInfo
+        Write-Host "Installing $($_.Name) ($($_.Value.Info))..." -ForegroundColor DarkYellow
         if ($AllowPrerelease -and $_.Value.Prerelease) {
             Install-Module $_.Name -Scope CurrentUser -Force:$_.Value.Force -SkipPublisherCheck:$_.Value.SkipPublisherCheck -AllowClobber:$_.Value.AllowClobber -AllowPrerelease:$_.Value.Prerelease
         }
@@ -809,10 +809,10 @@ $modules = @{
 $property = 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem'
 $name = 'LongPathsEnabled'
 if ((Get-ItemPropertyValue $property -Name $name) -ne 0) {
-    Write-Host "LongPaths support already enabled, skipping." -ForegroundColor $ColorInfo
+    Write-Host "LongPaths support already enabled, skipping." -ForegroundColor DarkYellow
 }
 else {
-    Write-Host "Enabling LongPaths support for file paths above 260 characters." -ForegroundColor $ColorInfo
+    Write-Host "Enabling LongPaths support for file paths above 260 characters." -ForegroundColor DarkYellow
     Set-ItemProperty $property -Name $name -Value 1
     $count++
 }
