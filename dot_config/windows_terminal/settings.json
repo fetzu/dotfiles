@@ -38,7 +38,7 @@
         [
             {
                 "colorScheme": "One Half Dark",
-                "commandline": "C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe -NoLogo",
+                "commandline": "pwsh.exe -NoLogo",
                 "font": 
                 {
                     "face": "FuraCode Nerd Font Mono Retina",
@@ -47,7 +47,7 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell",
-                "startingDirectory": "C:\\Users\\julie\\Desktop\\DEV"
+                "startingDirectory": "%USERPROFILE%\\DEV"
             },
             {
                 "commandline": "cmd.exe",
