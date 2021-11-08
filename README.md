@@ -25,6 +25,13 @@ cd X:\bin\
 .\chezmoi.exe init --apply fetzu
 ```
 
+###  MacOS
+
+One-liner install
+```
+sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply fetzu
+```
+
 <p align="right"><a href="#top" title="Back to top">🔝</a></p>
 
 ## Supported toolset 🛠️
