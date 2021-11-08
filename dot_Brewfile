@@ -10,6 +10,7 @@ tap "buo/cask-upgrade"
 tap "eugenmayer/dockersync"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 #tap "twpayne/taps"
@@ -25,14 +26,14 @@ brew "fswatch"                              # File change monitor
 brew "geoip"                                # Geographic IP lookup
 brew "gnupg"                                # GNU privacy guard
 brew "htop"                                 # Interactive system-monitor
-brew "graphicsmagick"                      # GraphicsMagick image processor
-brew "imagemagick"                         # ImageMagick image processor
+brew "graphicsmagick"                       # GraphicsMagick image processor
+brew "imagemagick"                          # ImageMagick image processor
 brew "jpegoptim"                            # JPEG compressor/optimizer
 brew "less"                                 # Terminal pager
 brew "lesspipe"                             # Input filter for `less`
 brew "micro"                                # Micro text editor
 brew "npm"                                  # Node package manager
-brew "optipng"                             # PNG compressor/optimizer
+brew "optipng"                              # PNG compressor/optimizer
 brew "tidy-html5"                           # HTML corrector
 brew "neofetch"                             # System information tool
 brew "python@3.x"                           # Python 3.x
@@ -51,7 +52,7 @@ brew "zlib"                                 # Lossless data-compression library
 brew "chezmoi"                              # Chezmoi dotfiles manager
 brew "hugo"                                 # Static website generator 
 
-cask "font-firacode-nerd-font"              # Fira Code Nerd Font
-cask "font-hack-nerd-font-mono"             # Hack Mono Nerd Font
-cask "font-sourcecodepro-nerd-font-mono"    # Source Code Pro Mono Nerd Font
+cask "font-fira-code-nerd-font"             # Fira Code Nerd Font
+cask "font-hack-nerd-font"                  # Hack Mono Nerd Font
+cask "font-source-code-pro"                 # Source Code Pro Mono Nerd Font
 cask "powershell"                           # Cross-platform shell
