@@ -12,7 +12,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "twpayne/taps"
+#tap "twpayne/taps"
 
 brew "asdf"                                 # Extendable version manager
 brew "autoconf"                             # Configuration shell script maker
@@ -48,7 +48,7 @@ brew "tmuxinator"                           # Tmux session controller
 brew "unison"                               # Unison file synchronizer
 brew "wget"                                 # Web content downloader
 brew "zlib"                                 # Lossless data-compression library
-brew "twpayne/taps/chezmoi"                 # Chezmoi dotfiles manager
+brew "chezmoi"                              # Chezmoi dotfiles manager
 brew "hugo"                                 # Static website generator 
 
 cask "font-firacode-nerd-font"              # Fira Code Nerd Font
