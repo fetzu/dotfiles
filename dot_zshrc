@@ -112,7 +112,7 @@ plugins=(
 #    symfony2                # Completion for [Symfony 2](https://symfony.com/)
 if [[ "$OSTYPE" =~ ^darwin ]]; then
     plugins+=(
-        osx                 # Utilities for macOS
+        macps                # Utilities for macOS
     )
 fi
 # (debian, dnf, fedora, ubuntu)
