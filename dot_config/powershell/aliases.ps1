@@ -178,7 +178,7 @@ foreach ($_ in ("winfetch", "neofetch", "screenfetch")) {
     }
 }
 
-Set-Alias -Name "update" -Value Update-Packages -Description "Keeps all apps and packages up to date."
+Set-Alias -Name "updatesys" -Value Update-Packages -Description "Keeps all apps and packages up to date."
 
 if (!(Get-Command "which" -ErrorAction "Ignore")) {
     Set-Alias -Name "which" -Value Search-Command -Description "Locates a command."

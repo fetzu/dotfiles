@@ -109,7 +109,7 @@ alias r=repeat
 
 # Keeps all apps and packages up to date.
 # Syntax: `update [all]`
-function update() {
+function updatesys() {
     if command -v softwarepudate &> /dev/null; then
         echo 'Checking for system updates...'
         softwareupdate -l -i -a
