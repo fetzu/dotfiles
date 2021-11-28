@@ -177,7 +177,7 @@ System-specific aliases are marked with <b title="macOS"></b>, <b title="Wind
 | ✅   | ✅         | ✅  | `path`  | Prints each `$PATH` entry on a separate line. |
 | ✅   | ✅         | ✅  | `sysinfo` | Displays information about the system.<br><strong><sup>Uses either [Winfetch](https://github.com/lptstr/winfetch), [Neofetch](https://github.com/dylanaraps/neofetch), or [Screenfetch](https://github.com/KittyKatt/screenFetch).</sup></strong> |
 | ✅   | ✅         | ✅  | `top`   | Monitors processes and system resources.<br><strong><sup>Uses either [atop](https://linux.die.net/man/1/atop), [htop](https://hisham.hm/htop/), [ntop](https://github.com/Nuke928/NTop) <b title="windows">⊞</b>, or native.</sup></strong> |
-| ✅   | ✅         | ✅  | `update` | Keeps all apps and packages up to date. |
+| ✅   | ✅         | ✅  | `updatesys` | Keeps all apps and packages up to date. |
 
 <p align="right"><a href="#top" title="Back to top">🔝</a></p>
 
