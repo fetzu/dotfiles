@@ -22,8 +22,43 @@ style = "bold red"              # The style used if the display option is in use
 [character]
 error_symbol = "[✖](bold red)"  # Indicate error status by changing the symbol.
 
+[docker_context]
+format = "via [🐋 $context](blue bold)"
+
+[git_branch]
+symbol = "🌱 "
+truncation_length = 4
+truncation_symbol = ""
+
 [git_state]
-cherry_pick = "🍒 PICKING"      # The text shown when a cherry-pick is in progress.
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](bold red)" # The text shown when a cherry-pick is in progress.
+
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+up_to_date = "✓"
+untracked = "🤷‍"
+stashed = "📦"
+modified = "📝"
+staged = '[++\($count\)](green)'
+renamed = "👅"
+deleted = "🗑"
 
 [python]
-pyenv_version_name = true       # Use pyenv to get Python version.
+pyenv_version_name = false       # Use pyenv to get Python version, not.
+
+[memory_usage]
+disabled = false
+format = "[mem ${ram_pct}|${ram}]($style) "
+threshold = 75
+style = "bold dimmed red"
+
+[username]
+style_user = "white bold"
+style_root = "black bold"
+format = "user: [$user]($style) "
+disabled = false
+show_always = true
