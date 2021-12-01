@@ -50,7 +50,9 @@ brew "unison"                               # Unison file synchronizer
 brew "wget"                                 # Web content downloader
 brew "zlib"                                 # Lossless data-compression library
 brew "chezmoi"                              # Chezmoi dotfiles manager
-brew "hugo"                                 # Static website generator 
+brew "hugo"                                 # Static website generator
+brew "lazygit"                              # Git in the console for the lazy
+brew "lazydocker"                           # Docker in the console for the lazy
 
 cask "font-fira-code-nerd-font"             # Fira Code Nerd Font
 cask "font-hack-nerd-font"                  # Hack Mono Nerd Font

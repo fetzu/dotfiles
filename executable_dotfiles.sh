@@ -171,7 +171,7 @@ setup_devtools() {
         exit 1
     }
 
-    # Install ASDF Versionn Manager
+    # Install ASDF Version Manager
     # https://asdf-vm.com/
     if ! command -v brew > /dev/null; then
         printf -- "%sInstalling/updating ASDF Extendable Version Manager...%s\n" "$BLUE" "$RESET"
