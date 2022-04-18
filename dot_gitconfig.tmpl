@@ -15,6 +15,7 @@
 #     https://github.com/jayharris/dotfiles-windows
 #     https://github.com/mathiasbynens/dotfiles
 #     https://git-scm.com/docs/git-config/
+#     https://github.com/mathiasbynens/dotfiles
 
 [apply]
     # Detect whitespace errors when applying a patch.
@@ -114,6 +115,7 @@
 
     # Specify the username of the author/committer.
     name = fetzu
+    signingkey = 92EA74F78FF07459
 
 [include]
     # Include aliases.
@@ -121,3 +123,29 @@
 
     # Include extra configuration (if any).
     path = .gitconfig_local
+
+[commit]
+
+	# https://help.github.com/articles/signing-commits-using-gpg/
+	gpgsign = true
+    
+# URL shorthands
+[url "git@github.com:"]
+
+	insteadOf = "gh:"
+	pushInsteadOf = "github:"
+	pushInsteadOf = "git://github.com/"
+
+[url "git://github.com/"]
+
+	insteadOf = "github:"
+
+[url "git@gist.github.com:"]
+
+	insteadOf = "gst:"
+	pushInsteadOf = "gist:"
+	pushInsteadOf = "git://gist.github.com/"
+
+[url "git://gist.github.com/"]
+
+	insteadOf = "gist:"
