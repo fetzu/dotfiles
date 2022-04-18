@@ -54,9 +54,9 @@ brew "hugo"                                 # Static website generator
 brew "lazygit"                              # Git in the console for the lazy
 brew "lazydocker"                           # Docker in the console for the lazy
 brew "fontbase"                             # Font management made awesome
-brew "gpg-suite-no-mail"                    # GPG-Suite (without e-mail) for Git signing
 
 cask "font-fira-code-nerd-font"             # Fira Code Nerd Font
 cask "font-hack-nerd-font"                  # Hack Mono Nerd Font
 cask "font-source-code-pro"                 # Source Code Pro Mono Nerd Font
 cask "powershell"                           # Cross-platform shell
+cask "gpg-suite-no-mail"                    # GPG-Suite (without e-mail) for Git signing
