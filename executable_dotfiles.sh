@@ -95,13 +95,6 @@ setup_prompts() {
     }
 
     # Install Zsh themes
-    PACKAGE_NAME='Powerlevel9k'
-    printf -- "%sInstalling/updating Zsh theme: %s...%s\n" "$BLUE" "$PACKAGE_NAME" "$RESET"
-    import_repo 'https://github.com/Powerlevel9k/powerlevel9k/archive/master.tar.gz' "${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}/themes/powerlevel9k" || {
-        error "import of ${PACKAGE_NAME} failed"
-        exit 1
-    }
-
     PACKAGE_NAME='Powerlevel10k'
     printf -- "%sInstalling/updating Zsh theme: %s...%s\n" "$BLUE" "$PACKAGE_NAME" "$RESET"
     import_repo 'https://github.com/romkatv/powerlevel10k/archive/master.tar.gz' "${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}/themes/powerlevel10k" || {
