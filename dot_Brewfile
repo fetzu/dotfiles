@@ -59,5 +59,6 @@ brew "warp"                                 # Yet Another Console :)
 cask "font-fira-code-nerd-font"             # Fira Code Nerd Font
 cask "font-hack-nerd-font"                  # Hack Mono Nerd Font
 cask "font-source-code-pro"                 # Source Code Pro Mono Nerd Font
+cask "font-jetbrains-mono-nerd-font"        # Jetbrains Mono Font Nerd Font
 cask "powershell"                           # Cross-platform shell
 cask "gpg-suite-no-mail"                    # GPG-Suite (without e-mail) for Git signing
