@@ -6,8 +6,7 @@
 #
 # See https://git-scm.com/docs/git-config
 #
-# {{- /* This file supports Go's text/template language. */ -}}
-#
+##
 # Sources:
 #     https://delicious-insights.com/en/posts/mastering-git-submodules/
 #     https://github.com/haacked/dotfiles
@@ -52,11 +51,8 @@
 
 [difftool "sourcetree"]
     # Specify the command to invoke Sourcetree.
-    {{ if eq .chezmoi.os "darwin" -}}
     cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    {{ else if eq .chezmoi.os "windows" -}}
-    cmd = '' \"$LOCAL\" \"$REMOTE\"
-    {{- end }}
+    
 
     # Disable the prompt before each invocation of the diff tool.
     prompt = false
@@ -92,11 +88,8 @@
 
 [mergetool "sourcetree"]
     # Specify the command to invoke Sourcetree.
-    {{ if eq .chezmoi.os "darwin" -}}
     cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    {{ else if eq .chezmoi.os "windows" -}}
-    cmd = '' \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    {{- end }}
+    
 
     # Use the exit code of the merge command to determine the success status.
     trustExitCode = true
@@ -111,11 +104,11 @@
 
 [user]
     # Specify the email address of the author/committer.
-    email = fetzu@users.noreply.github.com
+	email = 6372605+fetzu@users.noreply.github.com
 
     # Specify the username of the author/committer.
-    name = fetzu
-    signingkey = 92EA74F78FF07459
+	name = Julien
+	signingKey = F9B08DB4
 
 [include]
     # Include aliases.
