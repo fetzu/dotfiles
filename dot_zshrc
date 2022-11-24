@@ -354,7 +354,7 @@ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export GPG_TTY=$(tty)
-export HOMEBREW_GITHUB_API_TOKEN=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
+export HOMEBREW_GITHUB_API_TOKEN={{ keyring "github_brew" fetzu | quote }}
 
 # Created by `pipx` on 2022-07-25 09:05:40
 export PATH="$PATH:/Users/fetzu/.local/bin"
