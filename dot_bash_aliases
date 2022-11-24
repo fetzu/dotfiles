@@ -56,7 +56,7 @@ if type 'vdir' &> /dev/null; then
 fi
 
 # Uses human sizes, classifications, and color output for `ls`.
-alias ls='command ls -Fh ${colorflag}'
+#alias ls='command ls -Fh ${colorflag}'
 
 # Creates parent directories on demand.
 alias mkdir='mkdir -pv'
@@ -114,16 +114,16 @@ alias .5='cd ../../../../..'
 # -----------------------------------------------------------------------------
 
 # Lists visible files in long format.
-alias l='ls -l'
+alias l='exa -l'
 
 # Lists all files in long format, excluding `.` and `..`.
-alias ll='ls -lA'
+alias ll='exa -la'
 
 # Lists directories only, in long format.
-alias lsd='ls -l | grep --color=never "^d"'
+alias lsd='exa -l | grep --color=never "^d"'
 
 # Lists hidden files in long format.
-alias lsh='ls -dlA .?*'
+alias lsh='exa -dla .?*'
 
 
 # File management
