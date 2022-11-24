@@ -85,6 +85,8 @@ fi
 # See http://www.gnu.org/software/bash/manual/bashref.html#Aliases
 alias sudo='sudo ';
 
+# cat -> bat
+alias cat='bat'
 
 # Easier navigation
 # -----------------------------------------------------------------------------
