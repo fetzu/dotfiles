@@ -354,3 +354,23 @@ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export GPG_TTY=$(tty)
+export HOMEBREW_GITHUB_API_TOKEN=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
+
+# Created by `pipx` on 2022-07-25 09:05:40
+export PATH="$PATH:/Users/fetzu/.local/bin"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
