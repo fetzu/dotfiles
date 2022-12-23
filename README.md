@@ -242,7 +242,7 @@ System-specific aliases are marked with <b title="macOS"></b>, <b title="Wind
 
 | Bash | PowerShell | Zsh | Command | Description |
 |:----:|:----------:|:---:|---------|-------------|
-| ✅   | ✅         | ✅  | `dev` | Navigates to `~/Desktop/DEV`. |
+| ✅   | ✅         | ✅  | `dev` | Navigates to `~/Dev`. |
 
 <p align="right"><a href="#top" title="Back to top">🔝</a></p>
 

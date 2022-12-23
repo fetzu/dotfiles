@@ -411,7 +411,7 @@ alias sublimeconf='cd $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packag
 # -----------------------------------------------------------------------------
 
 # Navigates to custom paths.
-alias dev='cd $HOME/Desktop/DEV'
+alias dev='cd $HOME/Dev'
 
 
 # Varia
