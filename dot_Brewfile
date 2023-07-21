@@ -64,3 +64,4 @@ cask "font-source-code-pro"                 # Source Code Pro Mono Nerd Font
 cask "font-jetbrains-mono-nerd-font"        # Jetbrains Mono Font Nerd Font
 cask "powershell"                           # Cross-platform shell
 cask "gpg-suite-no-mail"                    # GPG-Suite (without e-mail) for Git signing
+cask "openinterminal"                       # OpenInTerminal Finder Toolbar
