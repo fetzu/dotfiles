@@ -57,6 +57,7 @@ brew "fontbase"                             # Font management made awesome
 brew "warp"                                 # Yet Another Console :)
 brew "exa"                                  # ls 2.0
 brew "bat"                                  # cat 2.0
+brew "atuin"                                # better shell history
 
 cask "font-fira-code-nerd-font"             # Fira Code Nerd Font
 cask "font-hack-nerd-font"                  # Hack Mono Nerd Font
