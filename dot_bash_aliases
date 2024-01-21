@@ -116,16 +116,16 @@ alias .5='cd ../../../../..'
 # -----------------------------------------------------------------------------
 
 # Lists visible files in long format.
-alias l='exa -l'
+alias l='eza -l'
 
 # Lists all files in long format, excluding `.` and `..`.
-alias ll='exa -la'
+alias ll='eza -la'
 
 # Lists directories only, in long format.
-alias lsd='exa -l | grep --color=never "^d"'
+alias lsd='eza -l | grep --color=never "^d"'
 
 # Lists hidden files in long format.
-alias lsh='exa -dla .?*'
+alias lsh='eza -dla .?*'
 
 
 # File management

@@ -55,7 +55,7 @@ brew "lazygit"                              # Git in the console for the lazy
 brew "lazydocker"                           # Docker in the console for the lazy
 brew "fontbase"                             # Font management made awesome
 brew "warp"                                 # Yet Another Console :)
-brew "exa"                                  # ls 2.0
+brew "eza"                                  # ls 2.1
 brew "bat"                                  # cat 2.0
 brew "atuin"                                # better shell history
 
