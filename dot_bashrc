@@ -355,6 +355,9 @@ fi
 # See https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 
+# Loading Atuin for better shell history
+eval "$(atuin init bash)"
+
 
 # Includes
 # -----------------------------------------------------------------------------
