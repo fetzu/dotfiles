@@ -58,6 +58,7 @@ brew "warp"                                 # Yet Another Console :)
 brew "eza"                                  # ls 2.1
 brew "bat"                                  # cat 2.0
 brew "atuin"                                # better shell history
+brew "difftastic"                           # better diff
 
 cask "font-fira-code-nerd-font"             # Fira Code Nerd Font
 cask "font-hack-nerd-font"                  # Hack Mono Nerd Font
