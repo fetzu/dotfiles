@@ -59,6 +59,9 @@ brew "eza"                                  # ls 2.1
 brew "bat"                                  # cat 2.0
 brew "atuin"                                # better shell history
 brew "difftastic"                           # better diff
+brew "pearlcleaner"                         # Uninstaller for macOS
+brew "maccy"                                # Better clipboard for macOS
+brew "pock"                                 # Better touchbar for MBPro
 
 cask "font-fira-code-nerd-font"             # Fira Code Nerd Font
 cask "font-hack-nerd-font"                  # Hack Mono Nerd Font
